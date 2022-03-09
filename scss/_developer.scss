@@ -1,0 +1,42 @@
+.developer {
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-gap: 40px;
+        max-width: 1210px;
+        margin-inline: auto;
+        //margin-right: auto; margin-left: auto;
+        padding-inline: 20px;
+        padding-block: 20px;
+        //=padding: 20px;
+        //padding-inline: right-left
+        //padding-block: top-bottom
+    }
+    &-item {
+        background-color: #fff;
+        border: 1px solid #DEE0E8;
+        box-sizing: border-box;
+        border-radius: 16px;
+        padding: 40px 40px 20px;
+    }
+    &-image {
+        aspect-ratio: 1;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+            margin-bottom: 15px;
+        }
+    }
+    &-name {
+        font-weight: 600;
+        font-size: 24px;
+    }
+    &-meta {
+        &-job {
+            font-weight: 400;
+            font-size: 18px;
+        }
+    }
+}
